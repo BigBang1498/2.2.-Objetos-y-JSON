@@ -7,7 +7,7 @@ document.getElementById('entidadForm').addEventListener('submit', function(e) {
     const telefono = document.getElementById('Telefono').value;
     const estadoCivil = document.getElementById('Idiomas').value;
 
-    // Obtener edades seleccionadas (pueden ser varias)
+    // Obtener edades seleccionadas 
     const edades = [];
     document.querySelectorAll('input[name="Edad"]:checked').forEach(function(checkbox) {
         edades.push(checkbox.value);
