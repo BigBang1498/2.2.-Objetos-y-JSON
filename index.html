@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.2. Objetos y JSON</title>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+    <form action="" method="get">
+        <label id="labelUsuario" for="Usuario">Usuario:</label><br>
+        <input type="text" class="textbox" id="Usuario" name="Usuario"/><br>
+        <label id="labelCorreo" for="Correo">Correo:</label><br>
+        <input type="email" class="textbox" id="Correo" name="Correo"/><br>
+        <label id="labelNumero" for="Telefono">Telefono:</label><br>
+        <input type="tel" class="textbox" id="Telefono" name="Telefono"/><br>
+        <label id="labelIdiomas" for="Idiomas">Estado Civil:</label><br>
+        <select id="Idiomas" name="Idiomas">
+          <option value="">-- Elige un estado civil --</option>
+          <option value="solter@">Solter@</option>
+          <option value="Casad@">Casad@</option>
+          <option value="Divorciad@">Divorciad@</option>
+          <option value="Viud@">Viud@</option>
+          <option value="UnionLibre">Unión Libre</option>
+        </select><br>
+        <span id="labelEdad">Edad</span><br>
+        <input type="checkbox" id="option1" name="Edad1" value="Edad1">
+        <label for="option1">De 0 a 15 años</label><br>
+        <input type="checkbox" id="option2" name="Edad2" value="Edad2">
+        <label for="option2">De 16 a 30 años</label><br>
+        <input type="checkbox" id="option3" name="Edad3" value="Edad3">
+        <label for="option3">De 31 a 45 años</label><br>
+        <input type="checkbox" id="option4" name="Edad4" value="Edad4">
+        <label for="option4">De 46 a 60 años</label><br>
+        <input type="checkbox" id="option5" name="Edad5" value="Edad5">
+        <label for="option5">61 en adelante</label><br>
+        <button id="enviar">Enviar</button>
+
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
