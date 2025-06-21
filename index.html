@@ -7,19 +7,21 @@
 </head>
 <body>
 
-  <!-- ---------- Formulario 1 : crear entidad ---------- -->
+  <!-- ==================== FORMULARIO 1 ==================== -->
+  <h2 style="text-align:center;margin-bottom:20px;">Formulario 1</h2>
+
   <form id="entidadForm" autocomplete="off">
-    <label id="labelUsuario" for="Usuario">Usuario:</label>
-    <input type="text" class="textbox" id="Usuario" name="Usuario">
+    <label for="Usuario">Usuario:</label>
+    <input type="text" class="textbox" id="Usuario">
 
-    <label id="labelCorreo" for="Correo">Correo:</label>
-    <input type="email" class="textbox" id="Correo" name="Correo">
+    <label for="Correo">Correo:</label>
+    <input type="email" class="textbox" id="Correo">
 
-    <label id="labelNumero" for="Telefono">Teléfono:</label>
-    <input type="tel" class="textbox" id="Telefono" name="Telefono">
+    <label for="Telefono">Teléfono:</label>
+    <input type="tel" class="textbox" id="Telefono">
 
-    <label id="labelIdiomas" for="Idiomas">Estado Civil:</label>
-    <select id="Idiomas" name="Idiomas">
+    <label for="Idiomas">Estado Civil:</label>
+    <select id="Idiomas">
       <option value="">-- Elige un estado civil --</option>
       <option value="solter@">Solter@</option>
       <option value="Casad@">Casad@</option>
@@ -40,24 +42,25 @@
     <input type="checkbox" id="option5" name="Edad" value="61 en adelante">
     <label for="option5">61 en adelante</label><br>
 
-    <button id="enviar" type="submit">Enviar</button>
+    <button type="submit">Enviar</button>
   </form>
 
-  <h3>Objeto generado en notación JSON:</h3>
-  <pre id="jsonOutput">{}</pre>
+  <h3 style="text-align:center;margin-top:30px;">Objetos generados (JSON)</h3>
+  <div id="jsonOutputs" style="max-width:500px;margin:auto;"></div>
 
-  <hr>
+  <hr style="margin:50px 0;">
 
-  <!-- ---------- Formulario 2 : pegar JSON y parsear ---------- -->
-  <h3>Introducir JSON manualmente</h3>
+  <!-- ==================== FORMULARIO 2 ==================== -->
+  <h2 style="text-align:center;margin-bottom:20px;">Formulario 2</h2>
+
+  <h3>Introducir JSON</h3>
   <form id="jsonForm" autocomplete="off">
     <textarea id="jsonInput" rows="6" style="width:100%;"></textarea>
     <button type="submit">Añadir objetos</button>
   </form>
 
-  <!-- ---------- Tabla resumen ---------- -->
-  <h3>Lista de objetos almacenados</h3>
-  <table id="tablaObjs" border="1" cellspacing="0" cellpadding="6" style="width:100%; max-width:800px; margin:auto;">
+  <h3 style="text-align:center;margin-top:30px;">Tabla de objetos (Formulario 2)</h3>
+  <table id="tablaObjs" border="1" cellspacing="0" cellpadding="6" style="width:100%;max-width:800px;margin:auto;">
     <thead>
       <tr>
         <th>#</th><th>Usuario</th><th>Correo</th><th>Teléfono</th>
