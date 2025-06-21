@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">   
 </head>
 <body>
-    <form action="" method="get">
+    <form id="entidadForm" autocomplete="off">
         <label id="labelUsuario" for="Usuario">Usuario:</label><br>
         <input type="text" class="textbox" id="Usuario" name="Usuario"/><br>
         <label id="labelCorreo" for="Correo">Correo:</label><br>
@@ -25,20 +25,20 @@
           <option value="UnionLibre">Unión Libre</option>
         </select><br>
         <span id="labelEdad">Edad</span><br>
-        <input type="checkbox" id="option1" name="Edad1" value="Edad1">
+        <input type="checkbox" id="option1" name="Edad" value="De 0 a 15 años">
         <label for="option1">De 0 a 15 años</label><br>
-        <input type="checkbox" id="option2" name="Edad2" value="Edad2">
+        <input type="checkbox" id="option2" name="Edad" value="De 16 a 30 años">
         <label for="option2">De 16 a 30 años</label><br>
-        <input type="checkbox" id="option3" name="Edad3" value="Edad3">
+        <input type="checkbox" id="option3" name="Edad" value="De 31 a 45 años">
         <label for="option3">De 31 a 45 años</label><br>
-        <input type="checkbox" id="option4" name="Edad4" value="Edad4">
+        <input type="checkbox" id="option4" name="Edad" value="De 46 a 60 años">
         <label for="option4">De 46 a 60 años</label><br>
-        <input type="checkbox" id="option5" name="Edad5" value="Edad5">
+        <input type="checkbox" id="option5" name="Edad" value="61 en adelante">
         <label for="option5">61 en adelante</label><br>
-        <button id="enviar">Enviar</button>
-
-
+        <button id="enviar" type="submit">Enviar</button>
     </form>
+    <h3>Objeto en notación JSON:</h3>
+    <pre id="jsonOutput">{}</pre>
     <script src="script.js"></script>
 </body>
 </html>
