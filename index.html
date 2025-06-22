@@ -8,7 +8,7 @@
 <body>
 
   <!-- ==================== FORMULARIO 1 ==================== -->
-  <h2 style="text-align:center;margin-bottom:20px;">Formulario 1</h2>
+  <h2 class="section-title">Formulario 1</h2>
 
   <form id="entidadForm" autocomplete="off">
     <label for="Usuario">Usuario:</label>
@@ -30,39 +30,37 @@
       <option value="UnionLibre">Unión Libre</option>
     </select>
 
-    <!-- ...existing code... -->
-<span id="labelEdad">Edad:</span><br>
-<input type="radio" id="option1" name="Edad" value="De 0 a 15 años">
-<label for="option1">De 0 a 15 años</label><br>
-<input type="radio" id="option2" name="Edad" value="De 16 a 30 años">
-<label for="option2">De 16 a 30 años</label><br>
-<input type="radio" id="option3" name="Edad" value="De 31 a 45 años">
-<label for="option3">De 31 a 45 años</label><br>
-<input type="radio" id="option4" name="Edad" value="De 46 a 60 años">
-<label for="option4">De 46 a 60 años</label><br>
-<input type="radio" id="option5" name="Edad" value="61 en adelante">
-<label for="option5">61 en adelante</label><br>
-<!-- ...existing code... -->
+    <span id="labelEdad">Edad:</span><br>
+    <input type="radio" id="option1" name="Edad" value="De 0 a 15 años">
+    <label for="option1">De 0 a 15 años</label><br>
+    <input type="radio" id="option2" name="Edad" value="De 16 a 30 años">
+    <label for="option2">De 16 a 30 años</label><br>
+    <input type="radio" id="option3" name="Edad" value="De 31 a 45 años">
+    <label for="option3">De 31 a 45 años</label><br>
+    <input type="radio" id="option4" name="Edad" value="De 46 a 60 años">
+    <label for="option4">De 46 a 60 años</label><br>
+    <input type="radio" id="option5" name="Edad" value="61 en adelante">
+    <label for="option5">61 en adelante</label><br>
 
     <button type="submit">Enviar</button>
   </form>
 
-  <h3 style="text-align:center;margin-top:30px;">Objetos generados (JSON)</h3>
-  <div id="jsonOutputs" style="max-width:500px;margin:auto;"></div>
+  <h3 class="json-heading">Objetos generados (JSON)</h3>
+  <div id="jsonOutputs" class="json-container"></div>
 
-  <hr style="margin:50px 0;">
+  <hr class="separator">
 
   <!-- ==================== FORMULARIO 2 ==================== -->
-  <h2 style="text-align:center;margin-bottom:20px;">Formulario 2</h2>
+  <h2 class="section-title">Formulario 2</h2>
 
   <h3>Introducir JSON</h3>
   <form id="jsonForm" autocomplete="off">
-    <textarea id="jsonInput" rows="6" style="width:100%;"></textarea>
+    <textarea id="jsonInput" rows="6" class="fullwidth"></textarea>
     <button type="submit">Añadir objetos</button>
   </form>
 
-  <h3 style="text-align:center;margin-top:30px;">Tabla de objetos</h3>
-  <table id="tablaObjs" border="1" cellspacing="0" cellpadding="6" style="width:100%;max-width:800px;margin:auto;">
+  <h3 class="table-heading">Tabla de objetos</h3>
+  <table id="tablaObjs" class="data-table">
     <thead>
       <tr>
         <th>#</th><th>Usuario</th><th>Correo</th><th>Teléfono</th>
